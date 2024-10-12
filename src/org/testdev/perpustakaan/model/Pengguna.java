@@ -44,5 +44,8 @@ public class Pengguna {
         this.email = email;
     }
     
+    public void cetakNama(){
+        System.out.println(this.nama);
+    }
     
 }

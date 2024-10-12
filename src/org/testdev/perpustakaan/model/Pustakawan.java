@@ -27,4 +27,10 @@ public class Pustakawan extends Pengguna {
         return true;
     }
     
+    @Override
+    public void cetakNama(){
+        System.out.print("Pustakawan : ");
+        super.cetakNama();
+    }
+    
 }
