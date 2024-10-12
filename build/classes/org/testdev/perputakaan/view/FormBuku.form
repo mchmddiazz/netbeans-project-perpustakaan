@@ -24,41 +24,53 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="btnSubmit" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="label2" pref="83" max="32767" attributes="0"/>
-                                  <Component id="label3" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="label4" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="label5" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="label1" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="label2" min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Component id="label3" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Component id="label4" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Component id="label5" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                  <Component id="label1" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="txtTahunTerbit" min="-2" pref="267" max="-2" attributes="0"/>
-                                          <Component id="txtPenulis" min="-2" pref="267" max="-2" attributes="0"/>
-                                          <Component id="txtPenerbit" min="-2" pref="267" max="-2" attributes="0"/>
-                                          <Component id="txtJudul" min="-2" pref="267" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="20" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Component id="txtHargaSewa" max="32767" attributes="0"/>
+                                  <Component id="txtTahunTerbit" min="-2" pref="267" max="-2" attributes="0"/>
+                                  <Component id="txtPenulis" min="-2" pref="267" max="-2" attributes="0"/>
+                                  <Component id="txtPenerbit" min="-2" pref="267" max="-2" attributes="0"/>
+                                  <Component id="txtJudul" min="-2" pref="267" max="-2" attributes="0"/>
+                                  <Component id="txtHargaSewa" min="-2" pref="267" max="-2" attributes="0"/>
+                                  <Component id="validateJudul" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="validateTahunTerbit" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="validatePenulis" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="validatePenerbit" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="validateHargaSewa" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="364" max="-2" attributes="0"/>
+                              <Component id="txtValidateTahunTerbit" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="btnSubmit" min="-2" pref="360" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="validateSubmit" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="172" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
-                      <Component id="txtValidateTahunTerbit" min="-2" max="-2" attributes="0"/>
-                  </Group>
               </Group>
-              <EmptySpace pref="59" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -66,43 +78,45 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="txtJudul" min="-2" max="-2" attributes="0"/>
-                                  <Component id="label1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="label2" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtTahunTerbit" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace pref="49" max="32767" attributes="0"/>
-                              <Component id="label3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="txtPenulis" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                      <Component id="label4" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="txtPenerbit" min="-2" max="-2" attributes="0"/>
-                  </Group>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="txtJudul" min="-2" max="-2" attributes="0"/>
+                  <Component id="label1" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="validateJudul" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="label2" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtTahunTerbit" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="validateTahunTerbit" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="label3" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPenulis" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="validatePenulis" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="label4" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtPenerbit" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="validatePenerbit" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="label5" min="-2" max="-2" attributes="0"/>
                   <Component id="txtHargaSewa" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="validateHargaSewa" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnSubmit" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="validateSubmit" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="txtValidateTahunTerbit" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
           </Group>
@@ -147,18 +161,41 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTahunTerbitActionPerformed"/>
         <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtTahunTerbitKeyReleased"/>
-        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtTahunTerbitKeyTyped"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtPenulis">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPenulisKeyReleased"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtPenerbit">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtPenerbitKeyReleased"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtHargaSewa">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtHargaSewaKeyReleased"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtJudul">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtJudulKeyReleased"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="txtValidateTahunTerbit">
+    </Component>
+    <Component class="javax.swing.JLabel" name="validateJudul">
+    </Component>
+    <Component class="javax.swing.JLabel" name="validateTahunTerbit">
+    </Component>
+    <Component class="javax.swing.JLabel" name="validatePenulis">
+    </Component>
+    <Component class="javax.swing.JLabel" name="validatePenerbit">
+    </Component>
+    <Component class="javax.swing.JLabel" name="validateHargaSewa">
+    </Component>
+    <Component class="javax.swing.JLabel" name="validateSubmit">
     </Component>
   </SubComponents>
 </Form>

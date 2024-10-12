@@ -39,6 +39,12 @@ public class FormBuku extends javax.swing.JFrame {
         txtHargaSewa = new javax.swing.JTextField();
         txtJudul = new javax.swing.JTextField();
         txtValidateTahunTerbit = new javax.swing.JLabel();
+        validateJudul = new javax.swing.JLabel();
+        validateTahunTerbit = new javax.swing.JLabel();
+        validatePenulis = new javax.swing.JLabel();
+        validatePenerbit = new javax.swing.JLabel();
+        validateHargaSewa = new javax.swing.JLabel();
+        validateSubmit = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,8 +74,29 @@ public class FormBuku extends javax.swing.JFrame {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 txtTahunTerbitKeyReleased(evt);
             }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtTahunTerbitKeyTyped(evt);
+        });
+
+        txtPenulis.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtPenulisKeyReleased(evt);
+            }
+        });
+
+        txtPenerbit.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtPenerbitKeyReleased(evt);
+            }
+        });
+
+        txtHargaSewa.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtHargaSewaKeyReleased(evt);
+            }
+        });
+
+        txtJudul.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtJudulKeyReleased(evt);
             }
         });
 
@@ -78,65 +105,81 @@ public class FormBuku extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(btnSubmit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(label2, javax.swing.GroupLayout.DEFAULT_SIZE, 83, Short.MAX_VALUE)
-                                    .addComponent(label3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(label4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(label5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(txtTahunTerbit, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtPenulis, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtPenerbit, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(txtJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(txtHargaSewa)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(173, 173, 173)
-                        .addComponent(txtValidateTahunTerbit)))
-                .addContainerGap(59, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(txtJudul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(29, 29, 29)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(label2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(label2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtTahunTerbit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                                .addComponent(label3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtTahunTerbit, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPenulis, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtPenerbit, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtJudul, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtHargaSewa, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(validateJudul)
+                                    .addComponent(validateTahunTerbit)
+                                    .addComponent(validatePenulis)
+                                    .addComponent(validatePenerbit)
+                                    .addComponent(validateHargaSewa)))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(txtPenulis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(39, 39, 39)
-                        .addComponent(label4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
+                                .addGap(364, 364, 364)
+                                .addComponent(txtValidateTahunTerbit)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(txtPenerbit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(28, 28, 28)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(btnSubmit, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(validateSubmit)
+                                .addGap(172, 172, 172))))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(txtJudul, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(validateJudul)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(label2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTahunTerbit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(validateTahunTerbit)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(label3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPenulis, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(validatePenulis)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(label4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtPenerbit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(validatePenerbit)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(label5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtHargaSewa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(validateHargaSewa)
                 .addGap(18, 18, 18)
                 .addComponent(btnSubmit)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(validateSubmit)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(txtValidateTahunTerbit)
                 .addGap(19, 19, 19))
         );
@@ -145,30 +188,102 @@ public class FormBuku extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubmitActionPerformed
-        // TODO add your handling code here:
+        submit();
     }//GEN-LAST:event_btnSubmitActionPerformed
 
+    public void submit() {
+        try {
+            boolean isEmpty = false;
+            if (this.txtJudul.getText().isEmpty()) {
+                isEmpty = true;
+            }
+            if (this.txtTahunTerbit.getText().isEmpty()) {
+                isEmpty = true;
+            }
+            if (this.txtPenulis.getText().isEmpty()) {
+                isEmpty = true;
+            }
+            if (this.txtPenerbit.getText().isEmpty()) {
+                isEmpty = true;
+            }
+            if (this.txtHargaSewa.getText().isEmpty()) {
+                isEmpty = true;
+            }
+            
+            if (isEmpty) {
+                this.validateSubmit.setText("Some input is empty");
+            } else {
+                this.validateSubmit.setText("Success submit");
+            }
+            
+        } catch (Exception e) {
+            this.validateSubmit.setText("An error occurred: " + e.getMessage());
+        }
+    }
+    
     private void txtTahunTerbitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTahunTerbitActionPerformed
        
     }//GEN-LAST:event_txtTahunTerbitActionPerformed
 
     private void txtTahunTerbitKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTahunTerbitKeyReleased
-        char test = evt.getKeyChar();
-        if (!(Character.isDigit(test))) {
-            this.txtValidateTahunTerbit.setText("input harus angka");
-        } else {
-            this.txtValidateTahunTerbit.setText("");
+        try {
+            Long angka = Long.parseLong(this.txtTahunTerbit.getText());
+            if (angka < 0) {
+                throw new NumberFormatException("angka < 0");
+            }
+            this.validateTahunTerbit.setText("");
+        } catch (NumberFormatException e) {
+            this.validateTahunTerbit.setText("Tahun terbit tidak valid");
         }
     }//GEN-LAST:event_txtTahunTerbitKeyReleased
 
-    private void txtTahunTerbitKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTahunTerbitKeyTyped
-        char test = evt.getKeyChar();
-        if (!(Character.isDigit(test))) {
-            this.txtValidateTahunTerbit.setText("input harus angka");
-        } else {
-            this.txtValidateTahunTerbit.setText("");
+    private void txtJudulKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtJudulKeyReleased
+        try {
+            if (this.txtJudul.getText().isEmpty()) {
+                this.validateJudul.setText("Judul tidak boleh kosong");
+            } else {
+                this.validateJudul.setText("");
+            }
+        } catch (Exception e) {
+            this.validateJudul.setText("An error occurred: " + e.getMessage());
         }
-    }//GEN-LAST:event_txtTahunTerbitKeyTyped
+    }//GEN-LAST:event_txtJudulKeyReleased
+
+    private void txtPenulisKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPenulisKeyReleased
+        try {
+            if (this.txtPenulis.getText().isEmpty()) {
+                this.validatePenulis.setText("Penulis tidak boleh kosong");
+            } else {
+                this.validatePenulis.setText("");
+            }
+        } catch (Exception e) {
+            this.validatePenulis.setText("An error occurred: " + e.getMessage());
+        }
+    }//GEN-LAST:event_txtPenulisKeyReleased
+
+    private void txtPenerbitKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPenerbitKeyReleased
+        try {
+            if (this.txtPenerbit.getText().isEmpty()) {
+                this.validatePenerbit.setText("Penerbit tidak boleh kosong");
+            } else {
+                this.validatePenerbit.setText("");
+            }
+        } catch (Exception e) {
+            this.validatePenerbit.setText("An error occurred: " + e.getMessage());
+        }
+    }//GEN-LAST:event_txtPenerbitKeyReleased
+
+    private void txtHargaSewaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHargaSewaKeyReleased
+        try {
+            Long harga = Long.parseLong(this.txtHargaSewa.getText());
+            if (harga < 0) {
+                throw new NumberFormatException("harga < 0");
+            }
+            this.validateHargaSewa.setText("");
+        } catch (NumberFormatException e) {
+            this.validateHargaSewa.setText("Harga tidak valid");
+        }
+    }//GEN-LAST:event_txtHargaSewaKeyReleased
 
     /**
      * @param args the command line arguments
@@ -218,5 +333,11 @@ public class FormBuku extends javax.swing.JFrame {
     private javax.swing.JTextField txtPenulis;
     private javax.swing.JTextField txtTahunTerbit;
     private javax.swing.JLabel txtValidateTahunTerbit;
+    private javax.swing.JLabel validateHargaSewa;
+    private javax.swing.JLabel validateJudul;
+    private javax.swing.JLabel validatePenerbit;
+    private javax.swing.JLabel validatePenulis;
+    private javax.swing.JLabel validateSubmit;
+    private javax.swing.JLabel validateTahunTerbit;
     // End of variables declaration//GEN-END:variables
 }
